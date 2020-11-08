@@ -1,0 +1,16 @@
+valid-parenthesis - use LIFO stack, use an Array
+
+Go Details:
+  * top is the last element
+  * pop off the last element
+  * append to the end
+
+O(N) time complexity
+O(N) space complexity
+
+0. initialize a map of closed brackets, mapped to open brackets
+1. initialize a stack
+2. process each string element once at a time
+3. if you encounter an open  bracket, push it in the stack
+4. if we encounter a closing bracket, check the element at the top of the stack. If it is an open bracket of the same type, pop it off and continue. Anything else is invalid
+5. At the end ensure the stack is empty
