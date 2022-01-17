@@ -8,6 +8,7 @@ Go Details:
 O(N) time complexity
 O(N) space complexity
 
+0. inputs consist of: "()[]{}"
 0. initialize a map of closed brackets, mapped to open brackets
 1. initialize a stack
 2. process each string element once at a time
